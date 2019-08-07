@@ -1,0 +1,40 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name = "Selenium grid" parallel="tests" thread-count="3" verbose="1">
+    <test name="chrome">
+    <parameter name ="browser" value="chrome"/>
+        <classes>
+            <class name ="MainPackage.seleniumgridnode1" priority="1"/>
+        </classes>
+         
+    </test>
+    
+    <test name="firefox">
+    <parameter name ="browser" value="firefox"/>
+        <classes>
+        
+            <class name ="MainPackage.seleniumgridnode2" priority="2"/>
+        </classes>
+         
+    </test>
+   
+    <test name="internetexplorer1">
+    <parameter name ="browser" value="internet explorer"/>
+        <classes>
+            <class name ="MainPackage.seleniumgridnode3" priority="3"/>
+        </classes>
+         
+    </test>
+    
+        <test name="variablecollection">
+    <parameter name ="browser" value="chrome"/>
+        <classes>
+        
+            <class name ="MainPackage.collectvariables" priority="4"/>
+        </classes>
+         
+    </test>
+    
+     
+    
+</suite>

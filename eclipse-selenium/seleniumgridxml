@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name = "Selenium grid" parallel="tests" thread-count="3" verbose="1">
+    <test name="seleniumgrid">
+    <parameter name ="browser" value="chrome"/>
+        <classes>
+            <class name ="MainPackage.seleniumgridnode1" />
+            <class name ="MainPackage.seleniumgridnode2" />
+            <class name ="MainPackage.seleniumgridnode3" />
+            <class name ="MainPackage.collectvariables" />
+            
+        </classes>
+         
+    </test>
+    
+   
+</suite>
