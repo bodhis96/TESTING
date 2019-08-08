@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="3" name="Failed suite [Suite1]" parallel="tests">
+  <parameter name="browser" value="firefox"/>
+  <test name="exampletest1(failed)" parallel="tests" preserve-order="false">
+    <parameter name="browser" value="Chrome"/>
+    <classes>
+      <class name="main.testNGTestParallel2">
+        <methods>
+          <include name="choose"/>
+          <include name="login"/>
+        </methods>
+      </class>
+    </classes>
+  </test>
+  <test name="exampletest3(failed)" parallel="tests" preserve-order="false">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="main.testNGTestParallel2">
+        <methods>
+          <include name="choose"/>
+          <include name="login"/>
+        </methods>
+      </class>
+    </classes>
+  </test>
+  <test name="exampletest2(failed)" parallel="tests" preserve-order="false">
+    <parameter name="browser" value="internet explorer"/>
+    <classes>
+      <class name="main.testNGTestParallel2">
+        <methods>
+          <include name="choose"/>
+          <include name="login"/>
+        </methods>
+      </class>
+    </classes>
+  </test>
+</suite>
